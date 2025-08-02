@@ -46,5 +46,3 @@ This project was completed in collaboration with:
 - Ayomide Onibokun  
 
 We are proud to have contributed this project as part of the **2025 AI4ALL Ignite** accelerator program.
-(mailto:john.doe@example.com))*
-- *Jane Smith ([jane.smith@example.com](mailto:jane.smith@example.com))*
