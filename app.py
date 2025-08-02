@@ -15,17 +15,19 @@ st.title("ASL Alphabet Letter Predictor")
 uploaded_file = st.file_uploader("Upload an ASL hand sign image", type=["png", "jpg", "jpeg"])
 
 if uploaded_file is not None:
-    # Display uploaded image
-    img = Image.open(uploaded_file).convert('L')  # convert to grayscale
-    st.image(img, caption='Uploaded Image', use_column_width=True)
+    img = Image.open(uploaded_file)
 
-    # Preprocess image for model
+    # Change this to 'RGB' or 'L' depending on model.input_shape
+    img = img.convert('L')  
+    st.image(img, caption='Uploaded Image', use_container_width=True)
+
     img = img.resize((64, 64))
     img_array = np.array(img) / 255.0
-    img_array = img_array.reshape(1, 64, 64, 1)  # model expects 4D input
+    img_array = img_array.astype('float32')
+    img_array = img_array.reshape(1, 64, 64, 1)  # or (1,64,64,3) if RGB
 
-    # Predict
     prediction = model.predict(img_array)
     predicted_class = class_names[np.argmax(prediction)]
 
     st.success(f"Predicted ASL Letter: **{predicted_class}**")
+
