@@ -1,6 +1,12 @@
 # Translating American Sign Language into Text Using CNNs
 
-Built through the **AI4ALL Ignite** Program, our project aimed to bridge communication barriers for Deaf and Hard-of-Hearing communities by training a deep learning model to interpret American Sign Language (ASL) letters. We applied Python, data preprocessing, and convolutional neural networks (CNNs) to build a functional model that recognizes ASL hand signs and outputs their corresponding letters. This initiative reflects our shared commitment to accessible and inclusive technology.
+We trained an AI model to caption pictures with sign language so that ASL will be more accessible to a wider range of audiences and bridge the communication gap between hearing and deaf people.
+
+Our project can help people learn the signs associated with each word/letter, and in the future the model can be trained to caption videos with sign language as well so that learning ASL can become more widespread.
+
+We first found a dataset and brainstormed different forms of biases in our project that we can work to mitigate. We then trained a CNN model to recognize different signs from inputted images based on the dataset we found, which will hopefully be expanded to captioning ASL used in videos, movies, shows, or other forms of content.
+
+Additionally, the dataset can be expanded and the model trained to recognize signs in different languages, so that the communication gap between deaf and hearing people worldwide can be closed.
 
 ## Problem Statement 
 
