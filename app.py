@@ -5,7 +5,7 @@ import numpy as np
 from PIL import Image
 
 # Load your trained model
-model = load_model('asl_model.h5')
+model = load_model('aslmodel.h5')
 
 # Class labels for ASL letters
 class_names = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
