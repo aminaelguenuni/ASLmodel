@@ -14,7 +14,7 @@ ASL is a key language for many individuals, yet there remains a lack of accessib
 
 ## Key Results 
 
-1. Trained a Convolutional Neural Network on over 78,000 labeled ASL images (about 3,000 images per alphabet letter).
+1. Trained a Convolutional Neural Network on over 87,000 labeled ASL images (about 3,000 images per alphabet letter).
 2. Achieved strong validation accuracy across the 26 ASL alphabet classes.
 3. Demonstrated successful letter classification from test images not seen during training.
 4. Created a working model that can serve as a foundation for real-time ASL recognition tools.
